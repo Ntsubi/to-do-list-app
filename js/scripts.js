@@ -5,7 +5,6 @@ let inputValue = $('#input').val();
 if (inputValue === '') {
     alert('You must write something!')
 }else{
-    let list = $('#list');
     $('#list').appendChild(li);
 }
 
@@ -17,4 +16,4 @@ li.on('dblclick', function crossOut(){
     li.toggleClass('strike');
 });
 //Adding the delete button "x"
-li.deleteButton
+
