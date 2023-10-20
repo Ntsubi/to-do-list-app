@@ -8,3 +8,12 @@ if (inputValue === '') {
     let list = $('#list');
     $('#list').appendChild(li);
 }
+
+//Crossing out an item from the list of items
+function crossOut(){
+    li.toggleClass('strike');
+};
+li.on('dblclick', function crossOut(){
+    li.toggleClass('strike');
+});
+
