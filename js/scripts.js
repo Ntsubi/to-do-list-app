@@ -16,4 +16,5 @@ function crossOut(){
 li.on('dblclick', function crossOut(){
     li.toggleClass('strike');
 });
-
+//Adding the delete button "x"
+li.deleteButton
