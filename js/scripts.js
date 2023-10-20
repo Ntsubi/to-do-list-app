@@ -16,4 +16,8 @@ li.on('dblclick', function crossOut(){
     li.toggleClass('strike');
 });
 //Adding the delete button "x"
+let crossOutButton = $('<crossOutButton></crossOutButton>')
+    crossOutButton.appendChild(createTextNode('X'));
+    li.append(crossOutButton);
+
 
