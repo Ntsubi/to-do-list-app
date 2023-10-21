@@ -11,12 +11,11 @@ if (inputValue === '') {
 }
 
 //Crossing out an item from the list of items
-function crossOut(){
+li.on('dblclick', crossOut);
+function crossOut() {
     li.toggleClass('strike');
-};
-li.on('dblclick', function crossOut(){
-    li.toggleClass('strike');
-});
+}
+
 //Adding the delete button "x"
 let crossOutButton = $('<crossOutButton></crossOutButton>')
     crossOutButton.append(document.createTextNode('X'));
