@@ -1,3 +1,4 @@
+function newItem(){
 //Adding a new item to the list of items
 let li = $('<li></li>');
 let inputValue = $('#input').val();
@@ -5,7 +6,7 @@ let inputValue = $('#input').val();
 if (inputValue === '') {
     alert('You must write something!')
 }else{
-    $('#list').appendChild(li);
+    $('#list').append(li);
 }
 
 //Crossing out an item from the list of items
@@ -20,4 +21,9 @@ let crossOutButton = $('<crossOutButton></crossOutButton>')
     crossOutButton.appendChild(createTextNode('X'));
     li.append(crossOutButton);
 
-
+//Adding class "delete" (display:none) from css
+crossOutButton.addEventListener('click', deleteListItem);
+function deleteListItem () {
+    li.addClass('delete');
+}
+}
